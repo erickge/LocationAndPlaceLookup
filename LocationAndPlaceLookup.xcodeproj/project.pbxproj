@@ -6,17 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C8C55ED52DE6AAD2002B5841 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C55ECF2DE6AAD2002B5841 /* Preview Assets.xcassets */; };
+		C8C55ED62DE6AAD2002B5841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C55ED12DE6AAD2002B5841 /* Assets.xcassets */; };
+		C8C55ED72DE6AAD2002B5841 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55ED22DE6AAD2002B5841 /* ContentView.swift */; };
+		C8C55ED82DE6AAD2002B5841 /* LocationAndPlaceLookupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55ED32DE6AAD2002B5841 /* LocationAndPlaceLookupApp.swift */; };
+		C8C55EDA2DE6AB78002B5841 /* LocationAndPlaceLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55ED92DE6AB78002B5841 /* LocationAndPlaceLookup.swift */; };
+		C8C55EDD2DE75841002B5841 /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EDC2DE75841002B5841 /* PlaceLookupView.swift */; };
+		C8C55EDF2DE7606D002B5841 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EDE2DE7606D002B5841 /* Place.swift */; };
+		C8C55EE12DE79805002B5841 /* PlaceLookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EE02DE79805002B5841 /* PlaceLookupViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C8C55EBE2DE6AAA9002B5841 /* LocationAndPlaceLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationAndPlaceLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C55ECF2DE6AAD2002B5841 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8C55ED12DE6AAD2002B5841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8C55ED22DE6AAD2002B5841 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8C55ED32DE6AAD2002B5841 /* LocationAndPlaceLookupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndPlaceLookupApp.swift; sourceTree = "<group>"; };
+		C8C55ED92DE6AB78002B5841 /* LocationAndPlaceLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndPlaceLookup.swift; sourceTree = "<group>"; };
+		C8C55EDB2DE75756002B5841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C8C55EDC2DE75841002B5841 /* PlaceLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupView.swift; sourceTree = "<group>"; };
+		C8C55EDE2DE7606D002B5841 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C8C55EE02DE79805002B5841 /* PlaceLookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C8C55EC02DE6AAA9002B5841 /* LocationAndPlaceLookup */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LocationAndPlaceLookup;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C8C55EBB2DE6AAA9002B5841 /* Frameworks */ = {
@@ -32,7 +44,7 @@
 		C8C55EB52DE6AAA9002B5841 = {
 			isa = PBXGroup;
 			children = (
-				C8C55EC02DE6AAA9002B5841 /* LocationAndPlaceLookup */,
+				C8C55ED42DE6AAD2002B5841 /* LocationAndPlaceLookup */,
 				C8C55EBF2DE6AAA9002B5841 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +55,30 @@
 				C8C55EBE2DE6AAA9002B5841 /* LocationAndPlaceLookup.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C8C55ED02DE6AAD2002B5841 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8C55ED32DE6AAD2002B5841 /* LocationAndPlaceLookupApp.swift */,
+				C8C55EDE2DE7606D002B5841 /* Place.swift */,
+				C8C55EDC2DE75841002B5841 /* PlaceLookupView.swift */,
+				C8C55EE02DE79805002B5841 /* PlaceLookupViewModel.swift */,
+				C8C55ED92DE6AB78002B5841 /* LocationAndPlaceLookup.swift */,
+				C8C55ED22DE6AAD2002B5841 /* ContentView.swift */,
+				C8C55ECF2DE6AAD2002B5841 /* Preview Assets.xcassets */,
+				C8C55ED12DE6AAD2002B5841 /* Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8C55ED42DE6AAD2002B5841 /* LocationAndPlaceLookup */ = {
+			isa = PBXGroup;
+			children = (
+				C8C55EDB2DE75756002B5841 /* Info.plist */,
+				C8C55ED02DE6AAD2002B5841 /* Preview Content */,
+			);
+			path = LocationAndPlaceLookup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C8C55EC02DE6AAA9002B5841 /* LocationAndPlaceLookup */,
 			);
 			name = LocationAndPlaceLookup;
 			packageProductDependencies = (
@@ -109,6 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C55ED52DE6AAD2002B5841 /* Preview Assets.xcassets in Resources */,
+				C8C55ED62DE6AAD2002B5841 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C55EDA2DE6AB78002B5841 /* LocationAndPlaceLookup.swift in Sources */,
+				C8C55ED72DE6AAD2002B5841 /* ContentView.swift in Sources */,
+				C8C55EDD2DE75841002B5841 /* PlaceLookupView.swift in Sources */,
+				C8C55ED82DE6AAD2002B5841 /* LocationAndPlaceLookupApp.swift in Sources */,
+				C8C55EDF2DE7606D002B5841 /* Place.swift in Sources */,
+				C8C55EE12DE79805002B5841 /* PlaceLookupViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +296,10 @@
 				DEVELOPMENT_TEAM = N24JNPX4SW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAndPlaceLookup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires acess to the devices's location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +326,10 @@
 				DEVELOPMENT_TEAM = N24JNPX4SW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAndPlaceLookup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires acess to the devices's location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

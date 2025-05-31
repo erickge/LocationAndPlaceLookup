@@ -10,38 +10,53 @@ import MapKit
 
 struct PlaceLookupView: View {
     let locationManager: LocationManager
+    @Binding var selectedPlace: Place?
     @State var placeVM = PlaceViewModel()
     @State private var searchText = ""
     @State private var searchTask: Task<Void, Never>?
     @State private var searchRegion = MKCoordinateRegion()
     @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         NavigationStack {
-            List(placeVM.places) { place in
-                VStack(alignment: .leading) {
-                    Text(place.name)
-                        .font(.title2)
-                    Text(place.address)
-                        .font(.callout)
-                        .foregroundStyle(.secondary)
+            Group {
+                if searchText.isEmpty {
+                    ContentUnavailableView("No Results", systemImage: "mappin.slash")
+                } else {
+                    List(placeVM.places) { place in
+                        VStack(alignment: .leading) {
+                            Text(place.name)
+                                .font(.title2)
+                            Text(place.address)
+                                .font(.callout)
+                                .foregroundStyle(.secondary)
+                        }
+                        .onTapGesture {
+                            selectedPlace = place
+                            dismiss()
+                        }
+                    }
+                    .listStyle(.plain)
                 }
                 
-                Text("You entered: \(searchText)")
             }
-            .listStyle(.plain)
+            
+            
             .navigationTitle("loation Search")
             .navigationBarTitleDisplayMode(.inline)
             
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Dismiss") {
-                    dismiss()
+                        dismiss()
                     }
                 }
             }
             
         }
         .searchable(text: $searchText)
+        .autocorrectionDisabled()
+        
         .onAppear {
             searchRegion = locationManager.getRegionAroundCurrentLocation() ?? MKCoordinateRegion()
         }
@@ -81,10 +96,10 @@ struct PlaceLookupView: View {
         }
         
     }
-        
-
+    
+    
 }
 
 #Preview {
-    PlaceLookupView(locationManager: LocationManager())
+    PlaceLookupView(locationManager: LocationManager(), selectedPlace: .constant(Place(mapItem: MKMapItem())))
 }
